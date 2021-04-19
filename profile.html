@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Mico KAura</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <header class="header container">
+            <div class="top">
+                <h1><a href="index.html">Mico KAura</a></h1>
+                <span class="fas fa-bars nav-button" onclick="navOpen()"></span>
+            </div>
+            <nav class="nav" id="navi">
+                <ul>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="profile.html">プロフィール</a></li>
+                    <li><a href="post1.html">撮影うら話</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- <section class="hero">
+            <div class="photo">
+                <img src="img/mico kaura.png" class="logo" alt="Mico KAura">
+            </div>
+        </section> -->
+
+        <section class="profile container">
+            <ul class="bread">
+                <li><a href="index.html">トップ</a></li>
+                <li><span class="fas fa-chevron-right"></span></li>
+                <li><a href="profile.html">プロフィール</a></li>
+            </ul>
+
+            <div class="prof-title">
+                <h1>プロフィール</h1>
+                <p>Mico KAuraのメンバーを紹介します。</p>
+            </div>
+
+            <div class="prof-main">
+                <article class="prof-article">
+                    <div class="prof-image" style="background-image: url(img/tanuki.png); background-repeat: no-repeat; background-size: contain;"></div>
+                    <div class="prof-text">
+                        <h2>そーたろう</h2>
+                        <p>
+                            大学では外国語を専攻。卒業後システムエンジニアとして4年勤務したのち退職。
+                            現在はWEBエンジニアになるべく勉強しながらWEBプログラミングについてブログなどで
+                            発信中。Mico KAuraではWEBサイトの管理、動画編集、撮影を担当。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="prof-article" style="flex-direction: row-reverse;">
+                    <div class="prof-image" style="background-image: url(img/background.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                    <div class="prof-text">
+                        <h2>名前</h2>
+                        <p>
+                            大学では外国語を専攻。卒業後システムエンジニアとして4年勤務したのち退職。
+                            現在はWEBエンジニアになるべく勉強しながらWEBプログラミングについてブログなどで
+                            発信中。Mico KAuraではWEBサイトの管理、動画編集、撮影を担当。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="prof-article">
+                    <div class="prof-image" style="background-image: url(img/background.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                    <div class="prof-text">
+                        <h2>名前</h2>
+                        <p>
+                            大学では外国語を専攻。卒業後システムエンジニアとして4年勤務したのち退職。
+                            現在はWEBエンジニアになるべく勉強しながらWEBプログラミングについてブログなどで
+                            発信中。Mico KAuraではWEBサイトの管理、動画編集、撮影を担当。
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+ 
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="foot-top">
+                    <div class="icon">
+                        <h1>Mico KAura</h1>
+                        <ul class="sns">
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+        
+                    <ul class="footmenu">
+                        <li><a href="index.html">トップ</a></li>
+                        <li><a href="profile.html">プロフィール</a></li>
+                        <li><a href="post1.html">撮影うら話</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+    
+                <p>
+                    Copyright @ Mico KAura
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            let num = 0;
+            function navOpen() {
+                if ( num === 0 ) {
+                    document.querySelector("nav").style.display = "block";
+                    num = 1;
+                } else if ( num === 1 ) {
+                    document.querySelector("nav").style.display = "none";
+                    num = 0;
+                }
+            }
+        </script>
+
+    </body>
+
+</html>
