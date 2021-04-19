@@ -324,7 +324,7 @@ a:hover {
     }
     
     .post .article {
-        margin: 30px 80px 60px 80px;
+        margin: 30px 50px 60px 50px;
         border: solid 1px #DDD;
     }
     
@@ -701,7 +701,6 @@ a:hover {
     }
 
     .prof-main {
-        min-width: 335px;
         margin: 30px 80px 60px 80px;
     }
 
@@ -796,7 +795,6 @@ a:hover {
     }
 
     .posts-main {
-        min-width: 335px;
         margin: 30px 80px 60px 80px;
     }
 
